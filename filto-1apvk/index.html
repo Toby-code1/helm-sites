@@ -230,7 +230,7 @@ footer .base{border-top:1px solid #ffffff1f;padding-top:22px;display:flex;justif
   <div class="wrap narrow">
     <h2 class="h2">Ready when you are.</h2>
     <p>Ready-to-drink coffee cocktails. Everything you need, nothing you don't. Join guests who made the switch to Filto.</p>
-    <form class="capture" onsubmit="(function(f,e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;fetch('https://ctuhyaswcmdxtgpynfis.supabase.co/functions/v1/helm-site',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'signup',slug:'',email:f.email.value})}).then(function(r){f.querySelector('.msg').textContent=r.ok?'Thanks — you\u2019re on the list!':'Something went wrong — try again.';b.disabled=false;if(r.ok)f.reset();}).catch(function(){f.querySelector('.msg').textContent='Something went wrong — try again.';b.disabled=false;})})(this,event)">
+    <form class="capture" onsubmit="(function(f,e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;fetch('https://ctuhyaswcmdxtgpynfis.supabase.co/functions/v1/helm-site',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'signup',slug:'filto-1apvk',email:f.email.value})}).then(function(r){f.querySelector('.msg').textContent=r.ok?'Thanks — you\u2019re on the list!':'Something went wrong — try again.';b.disabled=false;if(r.ok)f.reset();}).catch(function(){f.querySelector('.msg').textContent='Something went wrong — try again.';b.disabled=false;})})(this,event)">
       <input type="email" name="email" placeholder="you@email.com" required />
       <button class="btn" type="submit">Shop now</button>
       <span class="msg"></span>
